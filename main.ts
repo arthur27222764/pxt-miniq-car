@@ -45,6 +45,9 @@ namespace KSR037 {
 
 
     function init(): void {
+        pins.setPull(DigitalPin.P14, PinPullMode.PullUp);
+        pins.setPull(DigitalPin.P15, PinPullMode.PullUp);
+
 
         initialized = true;
     }
