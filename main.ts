@@ -45,11 +45,7 @@ namespace KSR037 {
 
 
     function init(): void {
-        pins.setPull(DigitalPin.P8, PinPullMode.PullUp);
-        pins.setPull(DigitalPin.P12, PinPullMode.PullUp);
-        i2c_write(MODE1, 0x00);
-        // Constrain the frequency
-        setFreq(50);
+       
         initialized = true;
     }
 
