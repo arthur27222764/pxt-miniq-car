@@ -39,13 +39,13 @@ namespace KSR037 {
         Stop = 4,
 
     }
-
+    let initialized = false;
     let neoStrip: neopixel.Strip;
 
 
 
     function init(): void {
-       
+
         initialized = true;
     }
 
@@ -110,13 +110,12 @@ namespace KSR037 {
         if (!initialized) {
             init()
         }
-         //M1A=Right M1B=Left
-        
+        //M1A=Right M1B=Left
+
 
         if (speed >= 0) {
             //
         } else {
-            setPwm(pwm1, 0, 0)
             //
         }
 
