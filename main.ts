@@ -1,7 +1,7 @@
 /**
  * KSR037 V0.010
  */
-//% weight=10 color=#00A6F0 icon="\uf085" block="KSR037"
+//% weight=10 color=#00A6F0 icon="\uf085" block="miniQ Car"
 namespace KSR037 {
 
 
