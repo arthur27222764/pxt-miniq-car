@@ -113,14 +113,34 @@ namespace KSR037 {
         if (!initialized) {
             init()
         }
-        //M1A=Right M1B=Left
+        //M1A=Right , M1B=Left
+        //P8 P1 =Left ,  P12 P2 =Right
 
+        switch (channel) {
+            case MotorNum.M1A:
+                if (speed >= 0) {
+                    pins.digitalWritePin(DigitalPin.P12, 1)
+                    pins.analogWritePin(AnalogPin.P2, 1023-(speed*4))
+                    
+                } else {
+                    pins.digitalWritePin(DigitalPin.P12, 0)
+                    pins.analogWritePin(AnalogPin.P2, -（speed*4))
+                }
+                break;
+            case MotorNum.M1B:
+                if (speed >= 0) {
+                    pins.digitalWritePin(DigitalPin.P8, 0)
+                    pins.analogWritePin(AnalogPin.P1, -（speed*4))
+                    
+                } else {
+                    pins.digitalWritePin(DigitalPin.P8, 1)
+                    pins.analogWritePin(AnalogPin.P1, 1023-(speed*4))
 
-        if (speed >= 0) {
-            //
-        } else {
-            //
+                }
+                break;
+
         }
+
 
     }
 
