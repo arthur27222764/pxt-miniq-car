@@ -130,11 +130,11 @@ namespace KSR037 {
             case MotorNum.M1B:
                 if (speed >= 0) {
                     pins.digitalWritePin(DigitalPin.P8, 0)
-                    pins.analogWritePin(AnalogPin.P1, -(speed*4))
+                    pins.analogWritePin(AnalogPin.P1, (speed*4))
                     
                 } else {
                     pins.digitalWritePin(DigitalPin.P8, 1)
-                    pins.analogWritePin(AnalogPin.P1, 1023-(speed*4))
+                    pins.analogWritePin(AnalogPin.P1, 1023-(-speed*4))
 
                 }
                 break;
