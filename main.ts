@@ -75,10 +75,10 @@ namespace KSR037 {
     }
 
 
-    //% blockId="KSR037_RGB1" 
-    //% block="RGB LED1"
+    //% blockId="KSR037_RGBR" 
+    //% block="RGB_LED_R"
     //% weight=96
-    export function RGB_LED1(): neopixel.Strip {
+    export function RGB_LEDR(): neopixel.Strip {
         if (!neoStrip) {
             neoStrip = neopixel.create(DigitalPin.P16, 2, NeoPixelMode.RGB)
 
@@ -87,10 +87,10 @@ namespace KSR037 {
         return neoStrip.range(0, 1);
     }
 
-    //% blockId="KSR037_RGB2" 
-    //% block="RGB LED2"
+    //% blockId="KSR037_RGBL" 
+    //% block="RGB_LED_L"
     //% weight=96
-    export function RGB_LED2(): neopixel.Strip {
+    export function RGB_LEDL(): neopixel.Strip {
         if (!neoStrip) {
             neoStrip = neopixel.create(DigitalPin.P16, 2, NeoPixelMode.RGB)
 
