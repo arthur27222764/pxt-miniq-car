@@ -76,9 +76,9 @@ namespace KSR037 {
 
 
     //% blockId="KSR037_RGBR" 
-    //% block="RGB_LED_R"
+    //% block="RGBLED_R"
     //% weight=96
-    export function RGB_LEDR(): neopixel.Strip {
+    export function RGBLED_R(): neopixel.Strip {
         if (!neoStrip) {
             neoStrip = neopixel.create(DigitalPin.P16, 2, NeoPixelMode.RGB)
 
@@ -88,9 +88,9 @@ namespace KSR037 {
     }
 
     //% blockId="KSR037_RGBL" 
-    //% block="RGB_LED_L"
+    //% block="RGBLED_L"
     //% weight=96
-    export function RGB_LEDL(): neopixel.Strip {
+    export function RGBLED_L(): neopixel.Strip {
         if (!neoStrip) {
             neoStrip = neopixel.create(DigitalPin.P16, 2, NeoPixelMode.RGB)
 

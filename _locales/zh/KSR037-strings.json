@@ -12,8 +12,8 @@
 	"KSR037.RunState.Right|block": "右轉",
 	"KSR037.RunState.Stop|block": "停止",
 	"KSR037.Ultrasonic|block": "超音波測距(公分)",
-	"KSR037.RGB_LEDR|block": "右全彩燈",
-	"KSR037.RGB_LEDL|block": "左全彩燈",
+	"KSR037.RGBLED_R|block": "右全彩燈",
+	"KSR037.RGBLED_L|block": "左全彩燈",
 	"KSR037.Read_Track|block": "循跡感測器 %sensor",
 	"KSR037.Motor|block": "馬達 %channel|速度 %speed",
 	"KSR037.Motor_Car|block": "車子 %index|左邊速度 %lspeed|右邊速度 %rspeed"
