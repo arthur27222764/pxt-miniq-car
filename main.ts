@@ -75,16 +75,28 @@ namespace KSR037 {
     }
 
 
-    //% blockId="KSR037_RGB" 
-    //% block="RGB LED "
+    //% blockId="KSR037_RGB1" 
+    //% block="RGB LED1"
     //% weight=96
-    export function RGB_LED(): neopixel.Strip {
+    export function RGB_LED1(): neopixel.Strip {
         if (!neoStrip) {
             neoStrip = neopixel.create(DigitalPin.P16, 2, NeoPixelMode.RGB)
 
         }
 
-        return neoStrip;
+        return neoStrip.range(0, 1);
+    }
+
+    //% blockId="KSR037_RGB2" 
+    //% block="RGB LED2"
+    //% weight=96
+    export function RGB_LED2(): neopixel.Strip {
+        if (!neoStrip) {
+            neoStrip = neopixel.create(DigitalPin.P16, 2, NeoPixelMode.RGB)
+
+        }
+
+        return neoStrip.range(1, 1);
     }
 
     //% blockId=KSR037_Track
